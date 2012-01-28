@@ -1,6 +1,6 @@
 class Hoge
   @@ary=[] #数列格納
-  #(num)番目のフィボナッチ数列生成
+  #フィボナッチ数列生成
   def fi(num)
   #fi(1)=0,fi(2)=1
    begin
@@ -23,9 +23,9 @@ class Hoge
     end
   end
 
-   #1からlast番目のフィボナッチつくろう
- def ran(last)
-  (1..last).each do |i|
+ #1からn番目のフィボナッチ数列つくろう
+ def ran(n)
+  (1..n).each do |i|
    puts fi(i)
   end
  end
@@ -34,7 +34,8 @@ class Hoge
  def fib_n(n)
    (1..n).each do |i|
     fi(i)
-    puts fi(num) if(n == i)
+    #n番目のとき出力
+    puts fi(n) if( i == n )
    end
  end
 end
