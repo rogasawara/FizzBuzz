@@ -19,19 +19,30 @@ class Hoge
     #return fi(num-2)+fi(num-1)
     end
     rescue
-     puts "えらああああああ 直接読んじゃだめ"
+     puts "直接よんじゃだめぽ"
     end
   end
+
    #1からlast番目のフィボナッチつくろう
  def ran(last)
   (1..last).each do |i|
    puts fi(i)
   end
  end
+
+ #n番目が欲しいとき
+ def fib_n(n)
+   (1..n).each do |num|
+    fi(num)
+    puts fi(num) if(n == num)
+   end
+ end
 end
 
 #10個つくってみた
 a= Hoge.new
 a.ran(10)
-p a.fi(100)
+p "------------------------"
+#10番目のみ出力
+a.fib_n(10)
 
