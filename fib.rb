@@ -32,17 +32,15 @@ class Hoge
 
  #n番目が欲しいとき
  def fib_n(n)
-   (1..n).each do |num|
-    fi(num)
-    puts fi(num) if(n == num)
+   (1..n).each do |i|
+    fi(i)
+    puts fi(num) if(n == i)
    end
  end
 end
 
-#10個つくってみた
 a= Hoge.new
+#10個つくってみた
 a.ran(10)
-p "------------------------"
 #10番目のみ出力
 a.fib_n(10)
-
