@@ -1,7 +1,6 @@
 (1..100).each do |target|
-#sur:surplus
+#余りで場合分け
 	sur = target % 15
-
 	case sur
 	when 0
 	  puts "fizz_buzz"
