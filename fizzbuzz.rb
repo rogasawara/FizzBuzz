@@ -1,5 +1,5 @@
 (1..100).each do |target|
-#Í¾¤ê¤Ç¾ì¹çÊ¬¤±
+#ä½™ã‚Šã§å ´åˆåˆ†ã‘
 	sur = target % 15
 	case sur
 	when 0
